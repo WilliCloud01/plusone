@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="CSS/footer.css">
+
+    <link rel="stylesheet" href="Assets/Font-Awesome/Font-Awesome-6.x/css/all.css">
+    <link rel="stylesheet" href="Assets/themify-icons/css/themify-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center mb-5">
+                    <h2 class="heading-section">PLUS ONE WEBSITE</h2>
+                </div>
+            </div>
+        </div>
+        <div class="wrap">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col">
+                        <p class="mb-0 phone"><span class="fa fa-phone"></span> <a href="#">+244 999 999 999</a></p>
+                    </div>
+                    <div class="col d-flex justify-content-end">
+                        <div class="social-media">
+                            <p class="mb-0 d-flex">
+                                <a href="#" class="d-flex align-items-center justify-content-center"><span
+                                        class="ti ti-facebook"><i class="sr-only">Facebook</i></span></a>
+                                <a href="#" class="d-flex align-items-center justify-content-center"><span
+                                        class="ti ti-twitter"><i class="sr-only">Twitter</i></span></a>
+                                <a href="#" class="d-flex align-items-center justify-content-center"><span
+                                        class="ti ti-instagram"><i class="sr-only">Instagram</i></span></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="admin-dashboard.html">Plus One <span>E-books</span></a>
+                <form action="#" class="searchform order-sm-start order-lg-last">
+                    <div class="form-group d-flex">
+                        <input type="text" class="form-control pl-3" placeholder="Search">
+                        <button type="submit" placeholder="" class="form-control search"><span
+                                class="fa fa-search"></span></button>
+                    </div>
+                </form>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                    aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa fa-bars"></span> Menu
+                </button>
+                <div class="collapse navbar-collapse" id="ftco-nav">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item "><a href="admin-dashboard.html" class="nav-link">Dashboard</a></li>
+                        <li class="nav-item "><a href="upload.html" class="nav-link">Upload</a></li>
+                        <li class="nav-item active"><a href="gerenciar.html" class="nav-link">Gerenciar Arquivos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- END nav -->
+
+    </section>
+
+    <section class="gerenciar-arquivos">
+        <div class="container">
+            <div class="col-lg-12">
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Nome</th>
+                                    <th>Autor</th>
+                                    <th>Gênero</th>
+                                    <th>Data de Postagem</th>
+                                    <th>Acção</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Kolor Tea Shirt For Man</td>
+                                    <td><span>Sale</span></td>
+                                    <td>Infantil</td>
+                                    <td>January 22</td>
+                                    <td>
+                                        <a href="" data-toggle="modal" data-target=".editarInfo">
+                                            <i class="fa fa-pencil" style="color: #000;"></i>
+                                        </a>
+
+                                        <!-- Large modal -->
+                                        <div class="modal fade editarInfo col-sm-12" tabindex="-1" role="dialog"
+                                            aria-hidden="true">
+                                            <div class="modal-dialog modal-xl">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">Editar informações</h5>
+                                                        <button type="button" class="close"
+                                                            data-dismiss="modal"><span>&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form action="" method="POST" name="cadLivro">
+                                                            <div class="row">
+                                                                <div class="col-sm-8">
+                                            
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                <label>Nome</label>
+                                                                                <input type="text" class="form-control" placeholder="Historias de Paulo Coelho"
+                                                                                    name="nomeLivro" required autocomplete="off" />
+                                                                            </div>
+                                                                        </div>
+                                            
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                <label>Autor</label>
+                                                                                <input type="email" class="form-control" placeholder="Willi Cloud" name="autorLivro"
+                                                                                    required autocomplete="off" />
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                            
+                                                                    <div class="row">
+                                                                        <div class="form-group col-md-6">
+                                                                            <label>Gênero</label>
+                                                                            <select id="inputState" class="form-control" name="generoLivro" required
+                                                                                autocomplete="off">
+                                                                                <option selected>Selecione...</option>
+                                                                            </select>
+                                                                        </div>
+                                            
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                <label>Número de Páginas</label>
+                                                                                <input type="text" class="form-control" placeholder="110" name="numPaginas" required
+                                                                                    autocomplete="off" />
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                            
+                                                                    <div class="row">
+                                                                        <div class="form-group col-md-12">
+                                                                            <label>Estilo</label>
+                                                                            <input type="text" class="form-control" placeholder="Descrição Breve" name="DescLivro"
+                                                                                required autocomplete="off" />
+                                                                        </div>
+                                            
+                                                                    </div>
+                                            
+                                                                </div>
+                                                                <div class="col-sm-4">
+                                            
+                                                                    <div class="upload-files-container">
+                                                                        <div class="drag-file-area">
+                                                                            <span class="material-icons-outlined upload-icon"> Carregar Ficheiro </span>
+                                                                            <h3 class="dynamic-message"> Drag & drop any file here </h3>
+                                                                            <label class="label"> or <span class="browse-files"> <input type="file"
+                                                                                        class="default-file-input" /> <span class="browse-files-text">browse
+                                                                                        file</span> <span>from device</span> </span> </label>
+                                                                        </div>
+                                                                        <span class="cannot-upload-message"> <span class="material-icons-outlined">error</span>
+                                                                            Please select a file first <span
+                                                                                class="material-icons-outlined cancel-alert-button">cancel</span> </span>
+                                                                        <div class="file-block">
+                                                                            <div class="file-info"> <span
+                                                                                    class="material-icons-outlined file-icon">description</span> <span
+                                                                                    class="file-name"> </span> | <span class="file-size"> </span> </div>
+                                                                            <span class="material-icons remove-file-icon">delete</span>
+                                                                            <div class="progress-bar"> </div>
+                                                                        </div>
+                                                                    </div>
+                                            
+                                                                </div>
+                                                            </div>
+
+                                                            <div>
+                                                                <button type="submit" class="btn btn-primary">Salvar</button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                    </div>
+                </div>
+                </td>
+                </tr>
+                </tbody>
+                </table>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="mt-5">
+        <footer class="footer-section">
+            <div class="container">
+                <div class="footer-cta pt-5 pb-5">
+                </div>
+                <div class="footer-content pt-5 pb-5">
+
+                </div>
+            </div>
+            <div class="copyright-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                            <div class="copyright-text">
+                                <p>Copyright &copy; 2018, All Right Reserved <a href="#">HEFESTUS</a></p>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                            <div class="footer-menu">
+                                <ul>
+                                    <li><a href="#">Termos</a></li>
+                                    <li><a href="#">Privacidade</a></li>
+                                    <li><a href="#">Politica</a></li>
+                                    <li><a href="#">Contacto</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script src="JS/jquery.min.js"></script>
+    <script src="JS/popper.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/main.js"></script>
+    <script src="JS/upload.js"></script>
+
+</body>
+
+</html>
